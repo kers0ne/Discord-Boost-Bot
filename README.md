@@ -1,13 +1,36 @@
-# Discord Server Booster
+# Discord Boost Bot
 
-Discord Server Booster is a utility written in Go that allows you to automatically join servers using invite links and boost them using Discord Nitro boosts. This tool helps server owners and administrators quickly boost their servers with minimal effort.
+A Discord bot that tracks and manages server boosts with notifications and statistics.
 
 ## Features
 
-- Join Discord servers using invite links
-- Boost Discord servers using Nitro boosts
-- Simple command-line interface
-- Multi-threaded for efficient processing of tasks
+- Real-time boost notifications
+- Boost statistics and leaderboards
+- Server boost level tracking
+- Command system for boost info
+
+## Commands
+
+- `!help` - Show all commands
+- `!boosts` - Display server boost status
+- `!boostcount` - Show total boost count
+- `!topboosters` - List top boosters
+- `!ping` - Check bot latency
+
+## Setup
+
+1. Create a Discord application at https://discord.com/developers/applications
+2. Copy your bot token to `.env` file
+3. Invite bot with Administrator permissions
+4. Run: `go mod tidy && go run main.go`
+
+## Environment Variables
+
+```
+DISCORD_TOKEN=your_bot_token_here
+COMMAND_PREFIX=!
+BOOST_CHANNEL_ID=channel_id_for_notifications
+```
 
 ## Requirements
 
