@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Server Cloner ⚡</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Whitney:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fab fa-discord"></i>
+                <h1>Discord Server Cloner ⚡</h1>
+            </div>
+            <div class="header-subtitle">
+                <span class="premium-badge">Premium Edition</span>
+                <span class="divider">•</span>
+                <span>Developed by AI Assistant</span>
+            </div>
+            <div class="header-actions">
+                <button class="btn-secondary">
+                    <i class="fab fa-discord"></i>
+                    JOIN DISCORD
+                </button>
+                <button class="btn-secondary">
+                    <i class="fas fa-heart"></i>
+                    SUPPORT US
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">ULTRA-FAST SERVER CLONING TECHNOLOGY</h2>
+                <h3 class="hero-subtitle">CLONE DISCORD SERVERS IN SECONDS</h3>
+                <p class="hero-description">
+                    PROFESSIONAL-GRADE SERVER CLONING WITH ADVANCED FEATURES, REAL-TIME PROGRESS TRACKING, AND ENTERPRISE-LEVEL RELIABILITY.
+                </p>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <div class="main-grid">
+            <!-- Configuration Section -->
+            <section class="config-section">
+                <div class="section-header">
+                    <h3>CONFIGURATION</h3>
+                    <p>SETUP YOUR CLONING PARAMETERS</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="discord-token">DISCORD TOKEN <span class="required">(REQUIRED)</span></label>
+                    <input type="password" id="discord-token" placeholder="Enter your Discord token...">
+                    <small>Enter a valid Discord Token – it's stored locally only.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="source-server">SOURCE SERVER ID <span class="subtitle">(SERVER TO COPY FROM)</span></label>
+                    <input type="text" id="source-server" placeholder="Source server ID...">
+                </div>
+
+                <div class="form-group">
+                    <label for="target-server">TARGET SERVER ID <span class="subtitle">(SERVER TO PASTE TO)</span></label>
+                    <input type="text" id="target-server" placeholder="Target server ID...">
+                </div>
+
+                <button class="clone-btn" id="clone-btn">
+                    <i class="fas fa-copy"></i>
+                    CLONE SERVER
+                </button>
+
+                <div class="security-notice">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <p><strong>Provide the Source and Target Server IDs.</strong></p>
+                        <p>Click Clone Server and watch magic happen.</p>
+                        <p><strong>Your data never leaves this page – everything runs right in your browser.</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Statistics -->
+            <section class="stats-section">
+                <div class="section-header">
+                    <h3>LIVE STATISTICS</h3>
+                    <p>REAL-TIME CLONING PROGRESS</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-label">CHANNELS</div>
+                            <div class="stat-value" id="channels-count">0</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-label">ROLES</div>
+                            <div class="stat-value" id="roles-count">0</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-label">EMOJIS</div>
+                            <div class="stat-value" id="emojis-count">0</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-label">STICKERS</div>
+                            <div class="stat-value" id="stickers-count">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overall-progress">
+                    <div class="progress-header">
+                        <span>OVERALL PROGRESS</span>
+                        <span id="progress-percent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Monitor -->
+            <section class="monitor-section">
+                <div class="section-header">
+                    <h3>PROGRESS MONITOR</h3>
+                    <p>LIVE OPERATION TRACKING</p>
+                </div>
+
+                <div class="monitor-display">
+                    <div id="monitor-content">
+                        <div class="monitor-status">
+                            <i class="fas fa-clock"></i>
+                            <span>READY TO CLONE YOUR SERVER...</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Setup Guide -->
+            <section class="guide-section">
+                <div class="section-header">
+                    <h3>QUICK SETUP GUIDE</h3>
+                    <p>GET STARTED IN MINUTES</p>
+                </div>
+
+                <div class="guide-content">
+                    <div class="guide-step">
+                        <h4><i class="fas fa-key"></i> GET YOUR DISCORD TOKEN</h4>
+                        <ol>
+                            <li>OPEN DISCORD IN YOUR BROWSER AND LOG IN</li>
+                            <li>PRESS F12 OR RIGHT-CLICK AND SELECT "INSPECT"</li>
+                            <li>GO TO THE "NETWORK" TAB AND REFRESH THE PAGE</li>
+                            <li>TYPE "API" IN THE FILTER BOX AND CLICK ON ANY REQUEST</li>
+                            <li>LOOK FOR "AUTHORIZATION" IN THE REQUEST HEADERS - THAT'S YOUR TOKEN</li>
+                        </ol>
+                    </div>
+
+                    <div class="guide-step">
+                        <h4><i class="fas fa-server"></i> GET SERVER IDS</h4>
+                        <ol>
+                            <li>ENABLE DEVELOPER MODE IN DISCORD SETTINGS → ADVANCED</li>
+                            <li>RIGHT-CLICK ON ANY SERVER ICON AND SELECT "COPY ID"</li>
+                            <li>FOR THE SOURCE SERVER, SELECT THE SERVER YOU WANT TO COPY FROM</li>
+                            <li>FOR THE TARGET SERVER, CREATE A NEW EMPTY SERVER OR SELECT AN EXISTING ONE</li>
+                            <li><strong>⚠️ IMPORTANT: YOU MUST HAVE ADMIN PERMISSIONS ON THE TARGET SERVER!</strong></li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Discord Server Cloner • Premium Edition • Developed by AI Assistant</p>
+            <p>Professional-grade server cloning technology</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
