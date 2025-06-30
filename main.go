@@ -1,4 +1,4 @@
-package main
+THIS SHOULD BE A LINTER ERRORpackage main
 
 import (
     "bufio"
